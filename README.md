@@ -4,7 +4,7 @@ Jupyter provides a notebook interface for running code and rendering Markdown.
 
 Pyodide provides a WebAssembly (WASM) execution environment for Python code.
 
-This repo uses [uv]() to manage Python dependencies; includes Pyodide at build time; and pulls in DuckDB, pandas, matplotlib, and several other libraries for data analysis workloads.
+This repo uses [uv](https://docs.astral.sh/uv/) to manage Python dependencies; includes Pyodide at build time; and pulls in DuckDB, pandas, matplotlib, and several other libraries for data analysis workloads.
 
 ## Building
 
@@ -13,6 +13,12 @@ uv run jupyter lite build
 ```
 
 Once complete, copy `_output` somewhere your web server expects and open `lab/index.html` to get started.
+
+Quick local webserver if needed for testing:
+
+```shell
+python3 -m http.server 9876
+```
 
 ## Configuration
 
