@@ -1,0 +1,13 @@
+{ 
+  "LiteBuildConfig": {
+    "contents": ["content"]
+  },
+  "PyodideAddon": {
+      "pyodide_url": "https://github.com/pyodide/pyodide/releases/download/0.26.4/pyodide-0.26.4.tar.bz2"
+  },
+  "PipliteAddon": {
+    "piplite_urls": [
+      "https://files.pythonhosted.org/packages/e6/75/49e5bfe642f71f272236b5b2d2691cf915a7283cc0ceda56357b61daa538/comm-0.2.2-py3-none-any.whl"
+    ]
+  }
+}
